@@ -11,7 +11,7 @@ echo "==========================================="
 
 # --- Update system ---
 echo "📦 Updating system packages..."
-sudo apt update && sudo apt upgrade -y
+sudo apt update  # && sudo apt upgrade -y
 
 # --- Install Node.js 20.x ---
 echo "📦 Installing Node.js 20.x..."
@@ -85,7 +85,7 @@ echo "==========================================="
 echo "🎉 Jerney is now live!"
 echo "==========================================="
 echo ""
-echo "Access your blog at: http://$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4 2>/dev/null || echo '<your-ec2-public-ip>')"
+echo "Access your blog at: http://$(curl -s http://54.85.188.189/latest/meta-data/public-ipv4 2>/dev/null || echo '54.85.188.189')"
 echo ""
 echo "Useful commands:"
 echo "  pm2 status          - Check backend status"
